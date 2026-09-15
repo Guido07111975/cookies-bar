@@ -26,6 +26,10 @@ The plugin comes with settings for colors (to style the bar) and makes it possib
 
 ## Changelog
 
+**1.0.1**
+
+- Plugin review: minor fixes
+
 **1.0**
 
 - Initial release
