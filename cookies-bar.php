@@ -2,7 +2,7 @@
 /*
  * Plugin Name: Cookies Bar
  * Description: With this lightweight plugin you can display a cookie compliance bar (banner) at the bottom of your site.
- * Version: 1.0
+ * Version: 1.0.1
  * Author: Guido
  * Author URI: https://www.guido.site
  * License: GPLv3
