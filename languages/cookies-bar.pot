@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: "
 "Cookies Bar\n"
 "POT-Creation-Date: "
-"2026-09-14 23:15+0200\n"
+"2026-09-19 20:12+0200\n"
 "PO-Revision-Date: "
 "2015-08-14 23:18+0200\n"
 "Last-Translator: \n"
@@ -32,12 +32,12 @@ msgstr ""
 #. Plugin Name of the plugin/theme
 #: cookies-bar-options.php:9
 #: cookies-bar-options.php:20
-#: cookies-bar-options.php:175
+#: cookies-bar-options.php:192
 msgid "Cookies Bar"
 msgstr ""
 
 #: cookies-bar-options.php:15
-#: cookies-bar.php:97
+#: cookies-bar.php:98
 msgid "Settings"
 msgstr ""
 
@@ -54,16 +54,19 @@ msgid "Message"
 msgstr ""
 
 #: cookies-bar-options.php:29
-#: cookies-bar-options.php:35
-#: cookies-bar-options.php:153
-#: cookies-bar-options.php:167
+#: cookies-bar-options.php:156
+#: cookies-bar-options.php:170
 msgid "Button"
 msgstr ""
 
 #: cookies-bar-options.php:32
-#: cookies-bar-options.php:109
-#: cookies-bar.php:70
+#: cookies-bar-options.php:112
+#: cookies-bar.php:71
 msgid "Privacy Policy"
+msgstr ""
+
+#: cookies-bar-options.php:35
+msgid "Label"
 msgstr ""
 
 #: cookies-bar-options.php:38
@@ -76,39 +79,43 @@ msgstr ""
 msgid "Color"
 msgstr ""
 
-#: cookies-bar-options.php:57
+#: cookies-bar-options.php:50
+msgid "Font size"
+msgstr ""
+
+#: cookies-bar-options.php:60
 msgid ""
 "Do not delete plugin "
 "settings from the "
 "database."
 msgstr ""
 
-#: cookies-bar-options.php:65
+#: cookies-bar-options.php:68
 msgid "Off"
 msgstr ""
 
-#: cookies-bar-options.php:66
+#: cookies-bar-options.php:69
 msgid "On"
 msgstr ""
 
-#: cookies-bar-options.php:75
+#: cookies-bar-options.php:78
 msgid "Month"
 msgstr ""
 
-#: cookies-bar-options.php:76
+#: cookies-bar-options.php:79
 msgid "Week"
 msgstr ""
 
-#: cookies-bar-options.php:77
+#: cookies-bar-options.php:80
 msgid "Day"
 msgstr ""
 
-#: cookies-bar-options.php:78
+#: cookies-bar-options.php:81
 msgid "Hour"
 msgstr ""
 
-#: cookies-bar-options.php:85
-#: cookies-bar.php:67
+#: cookies-bar-options.php:88
+#: cookies-bar.php:68
 msgid ""
 "We use cookies to make "
 "our site work. If you "
@@ -117,30 +124,36 @@ msgid ""
 "you agree with this."
 msgstr ""
 
-#: cookies-bar-options.php:93
-#: cookies-bar.php:68
+#: cookies-bar-options.php:96
+#: cookies-bar.php:69
 msgid "Ok"
 msgstr ""
 
-#: cookies-bar-options.php:101
+#: cookies-bar-options.php:104
 msgid ""
 "URL of your Privacy "
 "Policy page"
 msgstr ""
 
-#: cookies-bar-options.php:120
-#: cookies-bar-options.php:134
-#: cookies-bar-options.php:148
-#: cookies-bar-options.php:162
+#: cookies-bar-options.php:123
+#: cookies-bar-options.php:137
+#: cookies-bar-options.php:151
+#: cookies-bar-options.php:165
+#: cookies-bar-options.php:179
 msgid "Reset"
 msgstr ""
 
-#: cookies-bar-options.php:125
-#: cookies-bar-options.php:139
+#: cookies-bar-options.php:128
+#: cookies-bar-options.php:142
 msgid "Bar"
 msgstr ""
 
-#: cookies-bar-options.php:178
+#: cookies-bar-options.php:184
+msgid ""
+"Font size in pixels"
+msgstr ""
+
+#: cookies-bar-options.php:195
 msgid ""
 "Cookies Bar is active"
 msgstr ""
