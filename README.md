@@ -12,7 +12,7 @@ Cookies are set for (temporary) storing data, such as:
 - The content of a shopping cart
 - Site analytics
 
-The plugin comes with settings for colors (to style the bar) and makes it possible to include a link to your Privacy Policy.
+The plugin comes with various settings (to style the bar) and makes it possible to include a link to your Privacy Policy.
 
 ## License
 
@@ -25,6 +25,11 @@ The plugin comes with settings for colors (to style the bar) and makes it possib
 - Requires PHP: 7.4
 
 ## Changelog
+
+**1.0.2**
+
+- New: setting for font size
+- Minor changes in code
 
 **1.0.1**
 

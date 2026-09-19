@@ -60,6 +60,7 @@ function cookies_bar_display() {
 		if ( ( $expiration_setting == 'hour' ) || ( $expiration_setting == 'day' ) || ( $expiration_setting == 'week' ) || ( $expiration_setting == 'month' ) ) {
 			if ( ! isset( $_COOKIE['cookies_bar'] ) ) {
 				// cookies bar variables
+				$cookies_bar_font_size = empty( get_option( 'cookies-bar-setting-12' ) ) ? '16' : get_option( 'cookies-bar-setting-12' );
 				$cookies_bar_background = empty( get_option( 'cookies-bar-setting-8' ) ) ? '#333' : get_option( 'cookies-bar-setting-8' );
 				$cookies_bar_color = empty( get_option( 'cookies-bar-setting-9' ) ) ? '#fff' : get_option( 'cookies-bar-setting-9' );
 				$cookies_bar_button_background = empty( get_option( 'cookies-bar-setting-10' ) ) ? '#f26535' : get_option( 'cookies-bar-setting-10' );
@@ -67,7 +68,7 @@ function cookies_bar_display() {
 				$cookies_bar_message = __( 'We use cookies to make our site work. If you continue to use the site, we assume that you agree with this.', 'cookies-bar' );
 				$cookies_bar_button_text = __( 'Ok', 'cookies-bar' );
 				$cookies_bar_privacy_policy_url = get_option( 'cookies-bar-setting-6' );
-				$cookies_bar_privacy_policy_button_text = __( 'Privacy Policy', 'cookies-bar' );
+				$cookies_bar_privacy_policy_text = __( 'Privacy Policy', 'cookies-bar' );
 				if ( ! empty( get_option( 'cookies-bar-setting-4' ) ) ) {
 					$cookies_bar_message = get_option( 'cookies-bar-setting-4' );
 				}
@@ -75,16 +76,16 @@ function cookies_bar_display() {
 					$cookies_bar_button_text = get_option( 'cookies-bar-setting-5' );
 				}
 				if ( ! empty( get_option( 'cookies-bar-setting-7' ) ) ) {
-					$cookies_bar_privacy_policy_button_text = get_option( 'cookies-bar-setting-7' );
+					$cookies_bar_privacy_policy_text = get_option( 'cookies-bar-setting-7' );
 				}
 				if ( ! empty( $cookies_bar_privacy_policy_url ) ) {
-					$privacy_policy_button = '<a href="'.esc_url( $cookies_bar_privacy_policy_url ).'" class="button" style="background-color:'.esc_attr( $cookies_bar_button_background ).';color:'.esc_attr( $cookies_bar_button_color ).';" target="_blank">'.esc_html( $cookies_bar_privacy_policy_button_text ).'</a>';
+					$privacy_policy = '<a class="privacy-policy" href="'.esc_url( $cookies_bar_privacy_policy_url ).'" target="_blank">'.esc_html( $cookies_bar_privacy_policy_text ).'</a>';
 				} else {
-					$privacy_policy_button = '';
+					$privacy_policy = '';
 				}
 				// cookies bar
 				?>
-				<div id="cookies-bar" class="cookies-bar" style="background-color:<?php echo esc_attr( $cookies_bar_background ); ?>;color:<?php echo esc_attr( $cookies_bar_color ); ?>"><?php echo wp_kses_post( $cookies_bar_message ); ?><button onclick="cookiesBarCreateCookie()" style="background-color:<?php echo esc_attr( $cookies_bar_button_background ); ?>;color:<?php echo esc_attr( $cookies_bar_button_color ); ?>"><?php echo esc_html( $cookies_bar_button_text ); ?></button><?php echo wp_kses_post( $privacy_policy_button ); ?></div>
+				<div id="cookies-bar" class="cookies-bar" style="font-size:<?php echo esc_attr( $cookies_bar_font_size ); ?>px;background-color:<?php echo esc_attr( $cookies_bar_background ); ?>;color:<?php echo esc_attr( $cookies_bar_color ); ?>"><?php echo wp_kses_post( $cookies_bar_message ); ?><button onclick="cookiesBarCreateCookie()" style="background-color:<?php echo esc_attr( $cookies_bar_button_background ); ?>;color:<?php echo esc_attr( $cookies_bar_button_color ); ?>"><?php echo esc_html( $cookies_bar_button_text ); ?></button><?php echo wp_kses_post( $privacy_policy ); ?></div>
 				<?php
 			}
 		}
