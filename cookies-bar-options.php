@@ -178,9 +178,9 @@ function cookies_bar_field_callback_12() {
 	}
 	$value_submit = __( 'Reset', 'cookies-bar' );
 	?>
-	<script>function resetTwelfe(value){document.getElementById("cookies-bar-setting-12").value="16";}</script>
+	<script>function resetTwelve(value){document.getElementById("cookies-bar-setting-12").value="16";}</script>
 	<input type="number" size="10" min="10" max="100" id="cookies-bar-setting-12" name="cookies-bar-setting-12" value="<?php echo esc_attr( $value ); ?>" />
-	<input type="button" class="button button-secondary" onclick="resetTwelfe()" value="<?php echo esc_attr( $value_submit ); ?>">
+	<input type="button" class="button button-secondary" onclick="resetTwelve()" value="<?php echo esc_attr( $value_submit ); ?>">
 	<p><?php esc_html_e( 'Font size in pixels', 'cookies-bar' ); ?></p>
 	<?php
 }
