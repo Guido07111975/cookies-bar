@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: "
 "Cookies Bar\n"
 "POT-Creation-Date: "
-"2026-09-19 20:12+0200\n"
+"2026-09-27 13:56+0200\n"
 "PO-Revision-Date: "
 "2015-08-14 23:18+0200\n"
 "Last-Translator: \n"
@@ -37,7 +37,7 @@ msgid "Cookies Bar"
 msgstr ""
 
 #: cookies-bar-options.php:15
-#: cookies-bar.php:98
+#: cookies-bar.php:101
 msgid "Settings"
 msgstr ""
 
@@ -61,7 +61,7 @@ msgstr ""
 
 #: cookies-bar-options.php:32
 #: cookies-bar-options.php:112
-#: cookies-bar.php:71
+#: cookies-bar.php:74
 msgid "Privacy Policy"
 msgstr ""
 
@@ -111,11 +111,11 @@ msgid "Day"
 msgstr ""
 
 #: cookies-bar-options.php:81
-msgid "Hour"
+msgid "Session"
 msgstr ""
 
 #: cookies-bar-options.php:88
-#: cookies-bar.php:68
+#: cookies-bar.php:71
 msgid ""
 "We use cookies to make "
 "our site work. If you "
@@ -125,7 +125,7 @@ msgid ""
 msgstr ""
 
 #: cookies-bar-options.php:96
-#: cookies-bar.php:69
+#: cookies-bar.php:72
 msgid "Ok"
 msgstr ""
 

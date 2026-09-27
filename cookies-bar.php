@@ -2,7 +2,7 @@
 /*
  * Plugin Name: Cookies Bar
  * Description: With this lightweight plugin you can display a cookie compliance bar (banner) at the bottom of your site.
- * Version: 1.0.2
+ * Version: 1.1.0
  * Author: Guido
  * Author URI: https://www.guido.site
  * License: GPLv3
@@ -24,18 +24,21 @@ function cookies_bar_enqueue_scripts() {
 	// add expiration to script
 	$expiration_setting = get_option( 'cookies-bar-setting-3' );
 	$expiration = strtotime( 'now' );
-	if ( $expiration_setting == 'hour' ) {
-		$expiration = strtotime( '+1 hour' );
-	} else if ( $expiration_setting == 'day' ) {
-		$expiration = strtotime( '+1 day' );
-	} else if ( $expiration_setting == 'week' ) {
-		$expiration = strtotime( '+1 week' );
-	} else if ( $expiration_setting == 'month' ) {
-		$expiration = strtotime( '+1 month' );
+	if ( ( $expiration_setting == 'day' ) || ( $expiration_setting == 'week' ) || ( $expiration_setting == 'month' ) ) {
+		if ( $expiration_setting == 'day' ) {
+			$expiration = strtotime( '+1 day' );
+		} else if ( $expiration_setting == 'week' ) {
+			$expiration = strtotime( '+1 week' );
+		} else if ( $expiration_setting == 'month' ) {
+			$expiration = strtotime( '+1 month' );
+		}
+		$expiration = gmdate( 'Y M d H:i:s', $expiration );
+	} else if ( $expiration_setting == 'session' ) {
+		$expiration = 'session';
 	}
 	$args = array(
 		'cookieValue' => $expiration,
-		'cookieExpires' => gmdate( 'Y M d H:i:s', $expiration ),
+		'cookieExpires' => $expiration,
 	);
 	wp_localize_script( 'cookies-bar-script', 'objectL10n', $args );
 }
@@ -57,14 +60,14 @@ function cookies_bar_display() {
 	$cookie_bar_setting = get_option( 'cookies-bar-setting-2' );
 	$expiration_setting = get_option( 'cookies-bar-setting-3' );
 	if ( $cookie_bar_setting == 'on' ) {
-		if ( ( $expiration_setting == 'hour' ) || ( $expiration_setting == 'day' ) || ( $expiration_setting == 'week' ) || ( $expiration_setting == 'month' ) ) {
+		if ( ( $expiration_setting == 'session' ) || ( $expiration_setting == 'day' ) || ( $expiration_setting == 'week' ) || ( $expiration_setting == 'month' ) ) {
 			if ( ! isset( $_COOKIE['cookies_bar'] ) ) {
 				// cookies bar variables
 				$cookies_bar_font_size = empty( get_option( 'cookies-bar-setting-12' ) ) ? '16' : get_option( 'cookies-bar-setting-12' );
-				$cookies_bar_background = empty( get_option( 'cookies-bar-setting-8' ) ) ? '#333' : get_option( 'cookies-bar-setting-8' );
-				$cookies_bar_color = empty( get_option( 'cookies-bar-setting-9' ) ) ? '#fff' : get_option( 'cookies-bar-setting-9' );
+				$cookies_bar_background = empty( get_option( 'cookies-bar-setting-8' ) ) ? '#333333' : get_option( 'cookies-bar-setting-8' );
+				$cookies_bar_color = empty( get_option( 'cookies-bar-setting-9' ) ) ? '#ffffff' : get_option( 'cookies-bar-setting-9' );
 				$cookies_bar_button_background = empty( get_option( 'cookies-bar-setting-10' ) ) ? '#f26535' : get_option( 'cookies-bar-setting-10' );
-				$cookies_bar_button_color = empty( get_option( 'cookies-bar-setting-11' ) ) ? '#fff' : get_option( 'cookies-bar-setting-11' );
+				$cookies_bar_button_color = empty( get_option( 'cookies-bar-setting-11' ) ) ? '#ffffff' : get_option( 'cookies-bar-setting-11' );
 				$cookies_bar_message = __( 'We use cookies to make our site work. If you continue to use the site, we assume that you agree with this.', 'cookies-bar' );
 				$cookies_bar_button_text = __( 'Ok', 'cookies-bar' );
 				$cookies_bar_privacy_policy_url = get_option( 'cookies-bar-setting-6' );

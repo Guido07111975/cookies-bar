@@ -19,6 +19,7 @@ if ( $cookies_bar_keep != 'yes' ) {
 		'cookies-bar-setting-9',
 		'cookies-bar-setting-10',
 		'cookies-bar-setting-11',
+		'cookies-bar-setting-12',
 	);
 
 	foreach ( $cookies_bar_options as $option ) {

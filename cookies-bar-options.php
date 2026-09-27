@@ -78,7 +78,7 @@ function cookies_bar_field_callback_3() {
 		<option value="month" <?php echo ( $value == 'month' ) ? 'selected' : ''; ?>><?php esc_html_e( 'Month', 'cookies-bar' ); ?></option>
 		<option value="week" <?php echo ( $value == 'week' ) ? 'selected' : ''; ?>><?php esc_html_e( 'Week', 'cookies-bar' ); ?></option>
 		<option value="day" <?php echo ( $value == 'day' ) ? 'selected' : ''; ?>><?php esc_html_e( 'Day', 'cookies-bar' ); ?></option>
-		<option value="hour" <?php echo ( $value == 'hour' ) ? 'selected' : ''; ?>><?php esc_html_e( 'Hour', 'cookies-bar' ); ?></option>
+		<option value="session" <?php echo ( $value == 'session' ) ? 'selected' : ''; ?>><?php esc_html_e( 'Session', 'cookies-bar' ); ?></option>
 	</select>
 	<?php
 }

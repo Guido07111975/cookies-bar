@@ -26,6 +26,13 @@ The plugin comes with various settings (to style the bar) and makes it possible 
 
 ## Changelog
 
+**1.1.0**
+
+- New: replaced expiration value "hour" with "session"
+- With this expiration value the bar will appear each new browser session
+- Minor changes in code
+- SemVer: previous plugin version should have been 1.1.0
+
 **1.0.2**
 
 - New: setting for font size
@@ -35,6 +42,6 @@ The plugin comes with various settings (to style the bar) and makes it possible 
 
 - Plugin review: minor fixes
 
-**1.0**
+**1.0.0**
 
 - Initial release
