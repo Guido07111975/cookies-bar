@@ -12,8 +12,8 @@
 	box-sizing: border-box;
 }
 
-#cookies-bar button {
-	margin: 0 0 0 10px;
+#cookies-bar button.cookies-bar-button {
+	margin: 0 0 0 1em;
 	padding: 5px 10px;
 	border: none;
 	border-radius: 0;
@@ -35,7 +35,7 @@
 	text-decoration: none;
 }
 
-#cookies-bar a.privacy-policy {
-	margin: 0 0 0 10px;
+#cookies-bar a.cookies-bar-privacy-policy {
+	margin: 0 0 0 1em;
 	display: inline;
 }

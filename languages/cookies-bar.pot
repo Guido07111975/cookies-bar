@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: "
 "Cookies Bar\n"
 "POT-Creation-Date: "
-"2026-09-27 13:56+0200\n"
+"2026-09-30 16:34+0200\n"
 "PO-Revision-Date: "
 "2015-08-14 23:18+0200\n"
 "Last-Translator: \n"
@@ -32,7 +32,7 @@ msgstr ""
 #. Plugin Name of the plugin/theme
 #: cookies-bar-options.php:9
 #: cookies-bar-options.php:20
-#: cookies-bar-options.php:192
+#: cookies-bar-options.php:193
 msgid "Cookies Bar"
 msgstr ""
 
@@ -54,19 +54,16 @@ msgid "Message"
 msgstr ""
 
 #: cookies-bar-options.php:29
-#: cookies-bar-options.php:156
-#: cookies-bar-options.php:170
+#: cookies-bar-options.php:157
+#: cookies-bar-options.php:171
 msgid "Button"
 msgstr ""
 
 #: cookies-bar-options.php:32
+#: cookies-bar-options.php:35
 #: cookies-bar-options.php:112
 #: cookies-bar.php:74
 msgid "Privacy Policy"
-msgstr ""
-
-#: cookies-bar-options.php:35
-msgid "Label"
 msgstr ""
 
 #: cookies-bar-options.php:38
@@ -135,25 +132,29 @@ msgid ""
 "Policy page"
 msgstr ""
 
-#: cookies-bar-options.php:123
-#: cookies-bar-options.php:137
-#: cookies-bar-options.php:151
-#: cookies-bar-options.php:165
-#: cookies-bar-options.php:179
+#: cookies-bar-options.php:115
+msgid "Label"
+msgstr ""
+
+#: cookies-bar-options.php:124
+#: cookies-bar-options.php:138
+#: cookies-bar-options.php:152
+#: cookies-bar-options.php:166
+#: cookies-bar-options.php:180
 msgid "Reset"
 msgstr ""
 
-#: cookies-bar-options.php:128
-#: cookies-bar-options.php:142
+#: cookies-bar-options.php:129
+#: cookies-bar-options.php:143
 msgid "Bar"
 msgstr ""
 
-#: cookies-bar-options.php:184
+#: cookies-bar-options.php:185
 msgid ""
 "Font size in pixels"
 msgstr ""
 
-#: cookies-bar-options.php:195
+#: cookies-bar-options.php:196
 msgid ""
 "Cookies Bar is active"
 msgstr ""

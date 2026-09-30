@@ -2,7 +2,7 @@
 /*
  * Plugin Name: Cookies Bar
  * Description: With this lightweight plugin you can display a cookie compliance bar (banner) at the bottom of your site.
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: Guido
  * Author URI: https://www.guido.site
  * License: GPLv3
@@ -82,13 +82,13 @@ function cookies_bar_display() {
 					$cookies_bar_privacy_policy_text = get_option( 'cookies-bar-setting-7' );
 				}
 				if ( ! empty( $cookies_bar_privacy_policy_url ) ) {
-					$privacy_policy = '<a class="privacy-policy" href="'.esc_url( $cookies_bar_privacy_policy_url ).'" target="_blank">'.esc_html( $cookies_bar_privacy_policy_text ).'</a>';
+					$privacy_policy = '<a class="cookies-bar-privacy-policy" href="'.esc_url( $cookies_bar_privacy_policy_url ).'" target="_blank">'.esc_html( $cookies_bar_privacy_policy_text ).'</a>';
 				} else {
 					$privacy_policy = '';
 				}
 				// cookies bar
 				?>
-				<div id="cookies-bar" class="cookies-bar" style="font-size:<?php echo esc_attr( $cookies_bar_font_size ); ?>px;background-color:<?php echo esc_attr( $cookies_bar_background ); ?>;color:<?php echo esc_attr( $cookies_bar_color ); ?>"><?php echo wp_kses_post( $cookies_bar_message ); ?><button onclick="cookiesBarCreateCookie()" style="background-color:<?php echo esc_attr( $cookies_bar_button_background ); ?>;color:<?php echo esc_attr( $cookies_bar_button_color ); ?>"><?php echo esc_html( $cookies_bar_button_text ); ?></button><?php echo wp_kses_post( $privacy_policy ); ?></div>
+				<div id="cookies-bar" class="cookies-bar" style="font-size:<?php echo esc_attr( $cookies_bar_font_size ); ?>px;background-color:<?php echo esc_attr( $cookies_bar_background ); ?>;color:<?php echo esc_attr( $cookies_bar_color ); ?>;"><?php echo wp_kses_post( $cookies_bar_message ); ?><button onclick="cookiesBarCreateCookie()" class="cookies-bar-button" style="background-color:<?php echo esc_attr( $cookies_bar_button_background ); ?>;color:<?php echo esc_attr( $cookies_bar_button_color ); ?>;"><?php echo esc_html( $cookies_bar_button_text ); ?></button><?php echo wp_kses_post( $privacy_policy ); ?></div>
 				<?php
 			}
 		}

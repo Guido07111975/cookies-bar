@@ -32,7 +32,7 @@ function cookies_bar_admin_init() {
 	add_settings_field( 'cookies-bar-field-6', esc_html__( 'Privacy Policy', 'cookies-bar' ), 'cookies_bar_field_callback_6', 'cookies-bar', 'cookies-bar-section' );
  	register_setting( 'cookies-bar-options', 'cookies-bar-setting-6', array( 'sanitize_callback' => 'esc_url_raw' ) );
 
-	add_settings_field( 'cookies-bar-field-7', esc_html__( 'Label', 'cookies-bar' ), 'cookies_bar_field_callback_7', 'cookies-bar', 'cookies-bar-section' );
+	add_settings_field( 'cookies-bar-field-7', esc_html__( 'Privacy Policy', 'cookies-bar' ), 'cookies_bar_field_callback_7', 'cookies-bar', 'cookies-bar-section' );
  	register_setting( 'cookies-bar-options', 'cookies-bar-setting-7', array( 'sanitize_callback' => 'sanitize_text_field' ) );
 
 	add_settings_field( 'cookies-bar-field-8', esc_html__( 'Background', 'cookies-bar' ), 'cookies_bar_field_callback_8', 'cookies-bar', 'cookies-bar-section' );
@@ -87,7 +87,7 @@ function cookies_bar_field_callback_4() {
 	$value = get_option( 'cookies-bar-setting-4' );
 	$placeholder = __( 'We use cookies to make our site work. If you continue to use the site, we assume that you agree with this.', 'cookies-bar' );
 	?>
-	<textarea name="cookies-bar-setting-4" rows="5" cols="50" maxlength="1000" style="min-width:50%;" placeholder="<?php echo esc_attr( $placeholder ); ?>"><?php echo wp_kses_post( $value ); ?></textarea>
+	<textarea name="cookies-bar-setting-4" rows="5" cols="50" style="min-width:50%;" placeholder="<?php echo esc_attr( $placeholder ); ?>"><?php echo wp_kses_post( $value ); ?></textarea>
 	<?php
 }
 
@@ -95,7 +95,7 @@ function cookies_bar_field_callback_5() {
 	$value = get_option( 'cookies-bar-setting-5' );
 	$placeholder = __( 'Ok', 'cookies-bar' );
 	?>
-	<input type="text" size="40" maxlength="100" name="cookies-bar-setting-5" placeholder="<?php echo esc_attr( $placeholder ); ?>" value="<?php echo esc_attr( $value ); ?>" />
+	<input type="text" size="40" name="cookies-bar-setting-5" placeholder="<?php echo esc_attr( $placeholder ); ?>" value="<?php echo esc_attr( $value ); ?>" />
 	<?php
 }
 
@@ -103,7 +103,7 @@ function cookies_bar_field_callback_6() {
 	$value = get_option( 'cookies-bar-setting-6' );
 	$placeholder = __( 'URL of your Privacy Policy page', 'cookies-bar' );
 	?>
-	<input type="url" size="40" maxlength="200" name="cookies-bar-setting-6" placeholder="<?php echo esc_attr( $placeholder ); ?>" value="<?php echo esc_attr( $value ); ?>" />
+	<input type="url" size="40" name="cookies-bar-setting-6" placeholder="<?php echo esc_attr( $placeholder ); ?>" value="<?php echo esc_attr( $value ); ?>" />
 	<?php
 }
 
@@ -111,7 +111,8 @@ function cookies_bar_field_callback_7() {
 	$value = get_option( 'cookies-bar-setting-7' );
 	$placeholder = __( 'Privacy Policy', 'cookies-bar' );
 	?>
-	<input type="text" size="40" maxlength="100" name="cookies-bar-setting-7" placeholder="<?php echo esc_attr( $placeholder ); ?>" value="<?php echo esc_attr( $value ); ?>" />
+	<input type="text" size="40" name="cookies-bar-setting-7" placeholder="<?php echo esc_attr( $placeholder ); ?>" value="<?php echo esc_attr( $value ); ?>" />
+	<p><?php esc_html_e( 'Label', 'cookies-bar' ); ?></p>
 	<?php
 }
 
