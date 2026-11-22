@@ -123,9 +123,9 @@ function cookies_bar_field_callback_8() {
 	}
 	$value_submit = __( 'Reset', 'cookies-bar' );
 	?>
-	<script>function resetEight(value){document.getElementById("cookies-bar-setting-8").value="#333333";}</script>
-	<input type="color" maxlength="10" id="cookies-bar-setting-8" name="cookies-bar-setting-8" value="<?php echo esc_attr( $value ); ?>" />
-	<input type="button" class="button button-secondary" onclick="resetEight()" value="<?php echo esc_attr( $value_submit ); ?>">
+	<script>function reset8(value){document.getElementById("cookies-bar-setting-8").value="#333333";}</script>
+	<input type="color" maxlength="10" id="cookies-bar-setting-8" name="cookies-bar-setting-8" style="min-height:30px;" value="<?php echo esc_attr( $value ); ?>" />
+	<input type="button" class="button button-secondary" onclick="reset8()" value="<?php echo esc_attr( $value_submit ); ?>">
 	<p><?php esc_html_e( 'Bar', 'cookies-bar' ); ?></p>
 	<?php
 }
@@ -137,9 +137,9 @@ function cookies_bar_field_callback_9() {
 	}
 	$value_submit = __( 'Reset', 'cookies-bar' );
 	?>
-	<script>function resetNine(value){document.getElementById("cookies-bar-setting-9").value="#ffffff";}</script>
-	<input type="color" maxlength="10" id="cookies-bar-setting-9" name="cookies-bar-setting-9" value="<?php echo esc_attr( $value ); ?>" />
-	<input type="button" class="button button-secondary" onclick="resetNine()" value="<?php echo esc_attr( $value_submit ); ?>">
+	<script>function reset9(value){document.getElementById("cookies-bar-setting-9").value="#ffffff";}</script>
+	<input type="color" maxlength="10" id="cookies-bar-setting-9" name="cookies-bar-setting-9" style="min-height:30px;" value="<?php echo esc_attr( $value ); ?>" />
+	<input type="button" class="button button-secondary" onclick="reset9()" value="<?php echo esc_attr( $value_submit ); ?>">
 	<p><?php esc_html_e( 'Bar', 'cookies-bar' ); ?></p>
 	<?php
 }
@@ -151,9 +151,9 @@ function cookies_bar_field_callback_10() {
 	}
 	$value_submit = __( 'Reset', 'cookies-bar' );
 	?>
-	<script>function resetTen(value){document.getElementById("cookies-bar-setting-10").value="#f26535";}</script>
-	<input type="color" maxlength="10" id="cookies-bar-setting-10" name="cookies-bar-setting-10" value="<?php echo esc_attr( $value ); ?>" />
-	<input type="button" class="button button-secondary" onclick="resetTen()" value="<?php echo esc_attr( $value_submit ); ?>">
+	<script>function reset10(value){document.getElementById("cookies-bar-setting-10").value="#f26535";}</script>
+	<input type="color" maxlength="10" id="cookies-bar-setting-10" name="cookies-bar-setting-10" style="min-height:30px;" value="<?php echo esc_attr( $value ); ?>" />
+	<input type="button" class="button button-secondary" onclick="reset10()" value="<?php echo esc_attr( $value_submit ); ?>">
 	<p><?php esc_html_e( 'Button', 'cookies-bar' ); ?></p>
 	<?php
 }
@@ -165,9 +165,9 @@ function cookies_bar_field_callback_11() {
 	}
 	$value_submit = __( 'Reset', 'cookies-bar' );
 	?>
-	<script>function resetEleven(value){document.getElementById("cookies-bar-setting-11").value="#ffffff";}</script>
-	<input type="color" maxlength="10" id="cookies-bar-setting-11" name="cookies-bar-setting-11" value="<?php echo esc_attr( $value ); ?>" />
-	<input type="button" class="button button-secondary" onclick="resetEleven()" value="<?php echo esc_attr( $value_submit ); ?>">
+	<script>function reset11(value){document.getElementById("cookies-bar-setting-11").value="#ffffff";}</script>
+	<input type="color" maxlength="10" id="cookies-bar-setting-11" name="cookies-bar-setting-11" style="min-height:30px;" value="<?php echo esc_attr( $value ); ?>" />
+	<input type="button" class="button button-secondary" onclick="reset11()" value="<?php echo esc_attr( $value_submit ); ?>">
 	<p><?php esc_html_e( 'Button', 'cookies-bar' ); ?></p>
 	<?php
 }

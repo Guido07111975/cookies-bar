@@ -26,6 +26,10 @@ The plugin comes with various settings (to style the bar) and makes it possible 
 
 ## Changelog
 
+**1.1.2**
+
+- Minor changes in code
+
 **1.1.1**
 
 - UX: removed maxlength attribute from inputs
